@@ -15,3 +15,5 @@ API Link: http://www.omdbapi.com/
 
 Youtube Demo Video: https://youtu.be/MnYc6xHOG1w
 
+Deployment: https://movielist.cyclic.app 
+
