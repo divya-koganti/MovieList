@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Add Movie</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class = "column">
+        <h1>Add Movie</h1>
+
+
+    </div>
+    <div class = "column">
+            <form action="http://localhost:5000/add" method="post">
+                <div id = "addMovie">
+                    <input type="text" class = "input" id = "movieTitle" name = "movieTitle"/>
+                    <div id = "submitDiv">
+                        <input type="submit" class = "button"  id = "getMovie" value="Submit"/>
+            
+                    </div>
+            
+                    <ul id = "response">
+                        <%- text %>
+                    </ul> 
+        
+                </div>
+               
+            </form>
+            <form action="http://localhost:5000/home" method="get">
+                
+                <input type="submit" class = "button" value="Home"/>
+            
+
+               
+            </form>
+    
+    </div>
+    
+  
+
+
+</body>
+
+</html>

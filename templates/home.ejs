@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie List Home</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class = "column">
+        <h1>Home</h1>
+
+
+        <form action="http://localhost:5000/addMovie" method="post">
+            <div class = "submitButton">
+                <input type="submit" class = "button"  id = "addMovie" value="Add Movie"/>
+
+            </div>
+        </form>
+    </div>
+    <div class = "movies">
+        <%- movies %>
+    </div>
+
+
+
+</body>
+
+</html>

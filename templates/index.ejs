@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Movie List Login</title>
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div id = "login">
+
+
+        <form action="http://localhost:5000/home" method="post">
+            
+            <h1>Login</h1>
+
+         
+
+            <div id = "auth">
+                <h4>Email</h4>
+                <input type = "email" class = "input" id = "email" name = "email"/>
+                <h4>Password</h4>
+                <input type = "password" class = "input" id = "password" name = "password"/>
+            </div>
+            <div id = "loginType"> 
+                <input type="radio" class = "button" id="signUp" name="login" value="signUp">
+                <label for="signUp">Sign Up</label><br>
+                <input type="radio" class = "button" id="login" name="login" value="login">
+                <label for="login">Login</label><br>
+                
+            </div>
+              
+            <input type="submit" class = "button" id = "submit" value="Play"/>
+
+            <div id = "invalid">
+                <%- text %>
+
+            </div>
+
+        </form>
+    </div>
+
+    <div id = "landing">
+        <h1 class = "head">Movie List</h1>
+        <h2 class = "head">Keep track of your movies in a visual list</h2>
+
+    </div>
+
+</body>
+
+</html>
