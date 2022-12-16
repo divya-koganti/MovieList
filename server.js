@@ -20,6 +20,7 @@ const apiKey = process.env.KEY;
 
 
 
+
 const databaseAndCollection = {db: db, collection: collection};
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
