@@ -296,7 +296,7 @@ app.get("/home", async (request, response)=> {
 
 
 
-app.listen(portNumber);
+client.connect().then(() => app.listen(portNumber));
 console.log(`Web server is running at http://localhost:${portNumber}`);
 const prompt = "Stop to shutdown the server: ";
 process.stdout.write(prompt);
